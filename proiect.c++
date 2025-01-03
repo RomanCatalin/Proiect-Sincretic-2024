@@ -27,10 +27,30 @@ int verificare(int linie, int coloana)
     }
 }
 
+void afisare_tabla()
+{
+    for(int i = 0 ; i < 8;i++)
+    {
+        for(int j = 0; j < 8;j++)
+        {
+            if(tabla_sah[i]==j)
+            {
+                cout << "T ";
+            }
+            else
+            {
+                cout <<"_ ";
+            }
+        }
+        cout << endl;
+    }
+}
+
 
 int main()
 {
     initializare_tabla();
+    afisare_tabla();
 
 
 
