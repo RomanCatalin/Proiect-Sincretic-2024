@@ -41,6 +41,9 @@ void afisare_tabla()
         }
         cout << endl;
     }
+
+    cout << endl;
+    cout << endl;
 }
 
 void plasare(int linie)
