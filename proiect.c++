@@ -30,6 +30,9 @@ int verificare(int linie, int coloana)
 
 int main()
 {
+    initializare_tabla();
+
+
 
 
     return 0;
