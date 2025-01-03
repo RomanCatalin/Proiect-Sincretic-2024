@@ -18,13 +18,10 @@ int verificare(int linie, int coloana)
     {
         if(tabla_sah[i]==coloana)
         {
-            return 1;
-        }
-        else
-        {
             return 0;
         }
     }
+    return 1;
 }
 
 void afisare_tabla()
@@ -59,7 +56,8 @@ void plasare(int linie)
         if(verificare(linie,coloana))
         {
             tabla_sah[linie] = coloana;
-            plasare(linie++);
+            plasare(linie+1);
+            tabla_sah[linie]=-1;
         }
     }
 
