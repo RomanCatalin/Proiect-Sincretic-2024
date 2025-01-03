@@ -46,11 +46,23 @@ void afisare_tabla()
     }
 }
 
+void plasare(int linie)
+{
+    if(linie == 8)
+    {
+        afisare_tabla();
+        return;
+    }
+
+}
+
 
 int main()
 {
     initializare_tabla();
-    afisare_tabla();
+
+    plasare(0);
+
 
 
 
