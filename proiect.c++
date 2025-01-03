@@ -59,6 +59,7 @@ void plasare(int linie)
         if(verificare(linie,coloana))
         {
             tabla_sah[linie] = coloana;
+            plasare(linie++);
         }
     }
 
