@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
@@ -68,6 +70,23 @@ void plasare(int linie)
 
 }
 
+void plasare_aleatorie()
+{
+    initializare_tabla();
+
+    for(int i = 0; i < 8; i++)
+    {
+        int j;
+        do
+        {
+            j = rand() % 8;
+        } while (!verificare(i,j));
+        tabla_sah[i]=j;   
+    }
+    afisare_tabla();
+}
+
+
 void meniu()
 {
     int opt = 0;
@@ -86,6 +105,7 @@ void meniu()
         {
             case 1:
             cout << "Ati ales realizarea si afisarea tuturor solutiilor" << endl;
+            initializare_tabla();
             
             
             break;
@@ -113,10 +133,15 @@ void meniu()
 
 int main()
 {    
-    initializare_tabla();
-    plasare(0);
+    srand(time(0));
 
-    meniu();
+    //plasare(0);
+
+    initializare_tabla();
+
+    plasare_aleatorie();
+
+    //meniu();
 
  
 
