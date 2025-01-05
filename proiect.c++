@@ -49,11 +49,16 @@ void afisare_tabla()
     cout << endl;
 }
 
-void plasare(int linie)
+void plasare(int linie, int tip)
 {
-    if(linie == 8)
+    if(linie == 8 && tip == 0)
     {
         afisare_tabla();
+        solutii++;
+        return;
+    }
+    else if(linie == 8 && tip==1)
+    {
         solutii++;
         return;
     }
@@ -63,7 +68,7 @@ void plasare(int linie)
         if(verificare(linie,coloana))
         {
             tabla_sah[linie] = coloana;
-            plasare(linie+1);
+            plasare(linie+1,tip);
             tabla_sah[linie]=-1;
         }
     }
@@ -99,7 +104,7 @@ void meniu()
         cout << "3. Afisarea numarului de solutii posibile" << endl;
         cout << "0. Iesire" << endl;
         cout << endl;
-        //cin >> opt;
+        cin >> opt;
 
         switch(opt)
         {
@@ -107,7 +112,7 @@ void meniu()
             solutii = 0;
             cout << "Ati ales realizarea si afisarea tuturor solutiilor" << endl;
             initializare_tabla();
-            plasare(0);
+            plasare(0,0);
             break;
 
             case 2:
@@ -117,8 +122,11 @@ void meniu()
             break;
 
             case 3:
+            solutii = 0;
             cout << "Ati ales afisarea numarului de solutii posibile" << endl;
             cout << endl;
+            initializare_tabla();
+            plasare(0,1);
             cout << "Numarul total de solutii: " << solutii << endl;
             cout << endl;
 
@@ -139,9 +147,7 @@ int main()
 {    
     srand(time(0));
 
- 
-
-    //meniu();
+    meniu();
 
  
 
