@@ -104,19 +104,23 @@ void meniu()
         switch(opt)
         {
             case 1:
+            solutii = 0;
             cout << "Ati ales realizarea si afisarea tuturor solutiilor" << endl;
             initializare_tabla();
-            
-            
+            plasare(0);
             break;
 
             case 2:
             cout << "Ati ales realizarea si afisarea unei solutii aleatorie" << endl;
+            plasare_aleatorie();
 
             break;
 
             case 3:
             cout << "Ati ales afisarea numarului de solutii posibile" << endl;
+            cout << endl;
+            cout << "Numarul total de solutii: " << solutii << endl;
+            cout << endl;
 
             break;
 
@@ -135,11 +139,7 @@ int main()
 {    
     srand(time(0));
 
-    //plasare(0);
-
-    initializare_tabla();
-
-    plasare_aleatorie();
+ 
 
     //meniu();
 
