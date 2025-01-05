@@ -78,23 +78,30 @@ void meniu()
         cout << "1. Realizarea si afisarea tuturor solutiilor" << endl;
         cout << "2. Realizarea si afisarea unei solutii aleatorie" << endl;
         cout << "3. Afisarea numarului de solutii posibile" << endl;
-        cin >> opt;
+        cout << "0. Iesire" << endl;
+        cout << endl;
+        //cin >> opt;
 
         switch(opt)
         {
             case 1:
-
+            cout << "Ati ales realizarea si afisarea tuturor solutiilor" << endl;
+            
+            
             break;
 
             case 2:
+            cout << "Ati ales realizarea si afisarea unei solutii aleatorie" << endl;
 
             break;
 
             case 3:
+            cout << "Ati ales afisarea numarului de solutii posibile" << endl;
 
             break;
 
             case 0:
+            cout << "Ati ales iesire! La revedere!";
             
             break;
         }
@@ -105,10 +112,11 @@ void meniu()
 
 
 int main()
-{
-    meniu();
+{    
     initializare_tabla();
     plasare(0);
+
+    meniu();
 
  
 
