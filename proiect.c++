@@ -68,17 +68,49 @@ void plasare(int linie)
 
 }
 
+void meniu()
+{
+    int opt = 0;
+    do
+    {
+        cout << endl << "Program dedicat rezolvarii problemei celor 8 turnuri" << endl;
+        cout << "--- Alegeti o optiune ---" << endl;
+        cout << "1. Realizarea si afisarea tuturor solutiilor" << endl;
+        cout << "2. Realizarea si afisarea unei solutii aleatorie" << endl;
+        cout << "3. Afisarea numarului de solutii posibile" << endl;
+        cin >> opt;
+
+        switch(opt)
+        {
+            case 1:
+
+            break;
+
+            case 2:
+
+            break;
+
+            case 3:
+
+            break;
+
+            case 0:
+            
+            break;
+        }
+        
+    } while (opt!=0);
+    
+}
+
 
 int main()
 {
+    meniu();
     initializare_tabla();
-
     plasare(0);
-    
-    cout << endl;
-    cout << endl;
 
-    cout << solutii;
+ 
 
 
 
