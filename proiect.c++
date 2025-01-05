@@ -3,6 +3,7 @@
 using namespace std;
 
 int tabla_sah[8];
+int solutii = 0;
 
 void initializare_tabla()
 {
@@ -51,6 +52,7 @@ void plasare(int linie)
     if(linie == 8)
     {
         afisare_tabla();
+        solutii++;
         return;
     }
 
@@ -72,6 +74,11 @@ int main()
     initializare_tabla();
 
     plasare(0);
+    
+    cout << endl;
+    cout << endl;
+
+    cout << solutii;
 
 
 
