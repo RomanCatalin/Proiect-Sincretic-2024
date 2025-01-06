@@ -39,6 +39,7 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
  1 - daca plasarea este corecta;
 
 **Functia: "void_plasare(int linie, int tip)"**
+
 Aceasta functie primeste 2 parametri:
 
  - **int linie** : reprezinta linia tabloului de sah in care se va incerca plasarea turnului;
