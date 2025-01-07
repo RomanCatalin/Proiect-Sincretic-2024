@@ -1,5 +1,5 @@
 FROM gcc:latest
 WORKDIR /usr/src/proiect
-COPY proiect.cpp .
-RUN gcc -o proiect proiect.cpp -lstdc++
+COPY proiect.c++ .
+RUN gcc -o proiect proiect.c++ -lstdc++
 CMD ["./proiect"]
