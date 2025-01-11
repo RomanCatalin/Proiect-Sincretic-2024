@@ -137,12 +137,14 @@ void meniu()
             break;
 
         case 0:
+            system("clear");
             cout << "Ati ales iesire! La revedere!";
             cout << endl;
 
             break;
 
         default:
+            system("clear");
             cout << "Ati ales o optiune invalida!" << endl;
             break;
         }
