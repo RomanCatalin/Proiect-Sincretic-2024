@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
+#include <cstdlib>
 
 using namespace std;
 
@@ -90,41 +91,70 @@ void plasare_aleatorie()
     afisare_tabla();
 }
 
-void interfata()
+void meniu()
 {
-    cout << endl;
-    cout << endl;
-    cout << "Program dedicat rezolvarii problemei celor 8 turnuri" << endl;
-    cout << endl;
+    int opt = 0;
+    do
+    {
+        cout << endl
+             << "Program dedicat rezolvarii problemei celor 8 turnuri" << endl;
+        cout << "--- Alegeti o optiune ---" << endl;
+        cout << "1. Realizarea si afisarea tuturor solutiilor" << endl;
+        cout << "2. Realizarea si afisarea unei solutii aleatorie" << endl;
+        cout << "3. Afisarea numarului de solutii posibile" << endl;
+        cout << "0. Iesire" << endl;
+        cout << endl;
 
-    /* 
-    cout << "Realizarea si afisarea tuturor solutiilor" << endl;
-    solutii = 0;
-    initializare_tabla();
-    plasare(0, 0);
-    cout << endl;
-    cout << endl;
-    cout << endl; */
+        cin >> opt;
 
+        switch (opt)
+        {
+        case 1:
+            solutii = 0;
+            system("clear");
+            cout << "Ati ales realizarea si afisarea tuturor solutiilor" << endl;
+            initializare_tabla();
+            plasare(0, 0);
+            break;
 
+        case 2:
+            system("clear");
+            cout << "Ati ales realizarea si afisarea unei solutii aleatorie" << endl;
+            plasare_aleatorie();
 
-    //cout << "Realizarea si afisarea unei solutii aleatorie" << endl;
-    cout << endl;
-    plasare_aleatorie();
+            break;
 
-    solutii = 0;
-    initializare_tabla();
-    plasare(0, 1);
-    cout << "Numarul total de solutii: " << solutii << endl;
+        case 3:
+            solutii = 0;
+            system("clear");
+            cout << "Ati ales afisarea numarului de solutii posibile" << endl;
+            cout << endl;
+            initializare_tabla();
+            plasare(0, 1);
+            cout << "Numarul total de solutii: " << solutii << endl;
+            cout << endl;
 
+            break;
+
+        case 0:
+            cout << "Ati ales iesire! La revedere!";
+            cout << endl;
+
+            break;
+
+        default:
+            cout << "Ati ales o optiune invalida!" << endl;
+            break;
+        }
+
+    } while (opt != 0);
 }
 
 int main()
 {
-    cout << "Test" << endl;
     srand(time(0));
 
-    interfata();
+    meniu();
 
     return 0;
 }
