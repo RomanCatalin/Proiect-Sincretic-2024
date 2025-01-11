@@ -121,6 +121,7 @@ void interfata()
 
 int main()
 {
+    cout << "Test" << endl;
     srand(time(0));
 
     interfata();
