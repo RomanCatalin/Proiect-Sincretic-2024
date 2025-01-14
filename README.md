@@ -74,8 +74,8 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
 
  
  - void plasare_aleatorie():
-
  Această funcție plasează într-un mod aleatoriu turnurile pe tablă, asigurându-se că fiecare turn plasat nu se intersectează cu traiectoria altui turn.
+ 
 ![MAP2](https://github.com/user-attachments/assets/d908dd2d-6080-4b9e-8d3a-a0c0478eb8b7)
 
 
