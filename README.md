@@ -10,7 +10,7 @@ Proiectul a fost realizat în cadrul anului universitar 2024-2025, pentru materi
 
   
 
-### 1. Introducere
+## 1. Introducere
 
   
 
@@ -24,7 +24,7 @@ Proiectul a fost realizat în cadrul anului universitar 2024-2025, pentru materi
 
 **Sistemul de operare folosit:** Windows 10 x64
 
-### 2. Implementare
+## 2. Implementare
 
   
 
@@ -100,7 +100,7 @@ Această funcție afișează un meniu interactiv cu 3 optiuni(Afișarea tuturor 
 &nbsp;
 &nbsp;
 
-### 3. Rezultate
+## 3. Rezultate
 
 Exemplu de rulare pentru generarea unei soluții aleatorie:
 
