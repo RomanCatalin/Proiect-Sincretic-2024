@@ -68,14 +68,14 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
  Această funcție afișează o reprezentarea vizuală a tablei de șah în consolă.
  
  - void plasare(int linie, int tip):
-![MAP1](https://github.com/user-attachments/assets/55d214a1-72eb-4ada-bba8-ae0afdb49c27)
- 
  Această funcție plasează turnurile pe tablă utilizând o abordare recursivă iar apoi generează toate soluțiile posibile. Funcția are posibilitate de afișare a soluțiilor pe care le generează, în cazul în care parametrul 'tip' are valoarea '0'.
+![MAP1](https://github.com/user-attachments/assets/5c919796-8082-4b16-93e9-1170757c79b4)
+
  
  - void plasare_aleatorie():
-![MAP2](https://github.com/user-attachments/assets/15b19e75-d57f-4240-a528-6283983ddbf0)
-
  Această funcție plasează într-un mod aleatoriu turnurile pe tablă, asigurându-se că fiecare turn plasat nu se intersectează cu traiectoria altui turn.
+![MAP2](https://github.com/user-attachments/assets/d908dd2d-6080-4b9e-8d3a-a0c0478eb8b7)
+
 
 
 
