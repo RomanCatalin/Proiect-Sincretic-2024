@@ -1,49 +1,84 @@
 # **Proiect-Sincretic 2024**
 
+  
+
 ### Tema proiectului: Implementarea unui program care rezolva problema celor 8 turnuri
 
- 
+  
+
 Proiectul a fost realizat in cadrul anului universitar 2024-2025, pentru materia optionala Metode avansate de programare.
+
+  
 
 ### 1. Introducere
 
+  
+
 **Scopul:** Plasarea a 8 turnuri pe o tabla de sah 8x8 astfel incat niciunul sa nu se atace reciproc. Mai exact, turnurile nu pot fi plasate pe aceeasi linie sau coloana.
+
+  
 
 **Mediu de programare folosit:** Visual Studio Code
 
-**Sistem de operare:** Windows 10 x64
   
-  
+
+**Sistemul de operare folosit pentru dezvoltare:** Windows 10 x64
+
 ### 2. Implementare
+
+  
 
 Conceptul pe care se bazeaza programul este Backtracking,
 
+  
+
 Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea solutiilor care respecta un set de parametri sau cerinte.
+
+  
 
 **Librarii folosite:**
 
- - **iostream** : permite folosirea functiilor 'cin' 'cout', in scopul citirii optiunii dorite, respectiv afisarii solutiilor
- - **cstdlib** : permite folosirea functiilor 'rand()' si 'srand()', in scopul plasarii aleatoare
- - **ctime** : folosita pentru initializarea generatorului de nume aleatoare
- - **using namespace std** : permite utilizarea directa a functiilor, fara a avea nevoie de prefixul 'std::'
+  
 
-  **Variabile globale:**
- - **int tabla_sah[8]** : reprezinta tabloul de sah, fiecare index reprezinta o linie iar valoarea de pe acel index reprezinta coloana pe care este plasata turnul 
- - **int solutii** : un contor care numara cate solutii corecte au fost gasite in total
+-  **iostream** : permite folosirea functiilor 'cin' 'cout', in scopul citirii optiunii dorite, respectiv afisarii solutiilor
+
+-  **cstdlib** : permite folosirea functiilor 'rand()' si 'srand()', in scopul plasarii aleatoare
+
+-  **ctime** : folosita pentru initializarea generatorului de nume aleatoare
+
+-  **using namespace std** : permite utilizarea directa a functiilor, fara a avea nevoie de prefixul 'std::'
+
+  
+
+**Variabile globale:**
+
+-  **int tabla_sah[8]** : reprezinta tabloul de sah, fiecare index reprezinta o linie iar valoarea de pe acel index reprezinta coloana pe care este plasata turnul
+
+-  **int solutii** : un contor care numara cate solutii corecte au fost gasite in total
+
+**Functii:**
+
+ - void initializare_tabla():
+ Această funcție inițializează tabla de șah prin setarea tuturor pozițiilor la valoarea '-1', indicând faptul că niciun turn nu este plasat pe tablă.
  
- **Functia: "int_verificare"**
- Aceasta functie verifica daca putem plasa un turn pe o anumita linie si coloana, se asigura ca nu exista un turn plasat pe aceeasi coloana in randurile anterioare.
+ - int verificare(int linie, int coloana):
+  Această funcție verifică dacă un turn poate fi plasat pe poziția indicată de parametrul 'coloana' de pe rândul 'linie`.
+  
+ - void afisare_tabla():
+ Această funcție afișează o reprezentarea vizuală a tablei de șah în consolă.
  
- Tipul de date este int deoarece functia va returna:
- 0 - daca plasarea nu este corecta;
- 1 - daca plasarea este corecta;
+ - void plasare(int linie, int tip):
+ Această funcție plasează turnurile pe tablă utilizând o abordare recursivă iar apoi generează toate soluțiile posibile. Funcția are posibilitate de afișare a soluțiilor pe care le generează, în cazul în care parametrul 'tip' are valoarea '0'.
+ 
+ - void plasare_aleatorie():
+ Această funcție plasează într-un mod aleatoriu turnurile pe tablă, asigurându-se că fiecare turn plasat nu se intersectează cu traiectoria altui turn.
 
-**Functia: "void_plasare(int linie, int tip)"**
 
-Aceasta functie primeste 2 parametri:
 
- - **int linie** : reprezinta linia tabloului de sah in care se va incerca plasarea turnului;
- - **int tip** : indica modul de functionare ( 0 - afisarea solutiilor / 1 - fara afisarea solutiilor )
+ 
+ 
+
+  
 
   
 
