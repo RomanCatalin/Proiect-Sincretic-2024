@@ -96,9 +96,14 @@ Această funcție afișează un meniu interactiv cu 3 optiuni(Afișarea tuturor 
 
 ### 3. Rezultate
 
-Exemplu pentru generarea unei soluții aleatorie:
+Exemplu de rulare pentru generarea unei soluții aleatorie:
 
 ![ex](https://github.com/user-attachments/assets/5bb5ed14-cebd-4ee2-97f1-b137f4a1ef5b)
+
+Exemplu de rulare pentru generarea și afișarea numărului de soluții:
+
+![ex2](https://github.com/user-attachments/assets/3c47a4b6-9972-4a1b-98e1-4135854a65ba)
+
 
 
 
