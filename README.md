@@ -96,12 +96,6 @@ Această funcție afișează un meniu interactiv cu 3 optiuni(Afișarea tuturor 
 
 ![mapmn](https://github.com/user-attachments/assets/9a69f362-f9a1-445f-8120-f631d7cf7437)
 
-&nbsp;
-&nbsp;
-&nbsp;
-
-
-
 
 
 ### 3. Rezultate
