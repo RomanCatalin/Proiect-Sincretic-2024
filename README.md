@@ -87,14 +87,20 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
  
 ![MAP2](https://github.com/user-attachments/assets/d908dd2d-6080-4b9e-8d3a-a0c0478eb8b7)
 
+- void meniu():
+Această funcție afișează un meniu interactiv cu 3 optiuni(Afișarea tuturor soluțiilor, afișarea unei soluții aleatorie, afișarea numărului de soluții), și facilitează funcționarea acestuia printr-un switch.
+
+![MAPM](https://github.com/user-attachments/assets/f62542b1-3daa-4306-9d35-0abd430aa18f)
 
 
-
- 
- 
-
-  
-
-  
 
 ### 3. Rezultate
+
+Exemplu pentru generarea unei soluții aleatorie:
+
+![ex](https://github.com/user-attachments/assets/5bb5ed14-cebd-4ee2-97f1-b137f4a1ef5b)
+
+
+
+
+
