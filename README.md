@@ -2,11 +2,11 @@
 
   
 
-### Tema proiectului: Implementarea unui program care rezolva problema celor 8 turnuri
+### Tema proiectului: Implementarea unui program care rezolvă problema celor 8 turnuri
 
   
 
-Proiectul a fost realizat in cadrul anului universitar 2024-2025, pentru materia optionala Metode avansate de programare.
+Proiectul a fost realizat în cadrul anului universitar 2024-2025, pentru materia opțională Metode avansate de programare.
 
   
 
@@ -14,7 +14,7 @@ Proiectul a fost realizat in cadrul anului universitar 2024-2025, pentru materia
 
   
 
-**Scopul:** Plasarea a 8 turnuri pe o tabla de sah 8x8 astfel incat niciunul sa nu se atace reciproc. Mai exact, turnurile nu pot fi plasate pe aceeasi linie sau coloana.
+**Scopul:** Plasarea a 8 turnuri pe o tablă de șah 8x8 astfel încât niciunul să nu se atace reciproc. Mai exact, turnurile nu pot fi plasate pe aceeași linie sau coloană.
 
   
 
@@ -22,45 +22,41 @@ Proiectul a fost realizat in cadrul anului universitar 2024-2025, pentru materia
 
   
 
-**Sistemul de operare folosit pentru dezvoltare:** Windows 10 x64
+**Sistemul de operare folosit:** Windows 10 x64
 
 ### 2. Implementare
 
   
 
-Conceptul pe care se bazeaza programul este Backtracking,
+Conceptul pe care se bazează programul este Backtracking,
 
   
 
-Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea solutiilor care respecta un set de parametri sau cerinte.
+Backtracking-ul se referă la cautarea tuturor soluțiilor posibile, și selectarea soluțiilor care respectă un set de parametri sau cerințe.
 
   
 
-**Librarii folosite:**
+**Librării folosite:**
 
   
 
--  **iostream** : permite folosirea functiilor 'cin' 'cout', in scopul citirii optiunii dorite, respectiv afisarii solutiilor
+-  **iostream** : permite folosirea funcțiilor 'cin' 'cout', în scopul citirii opțiunii dorite, respectiv afișării soluțiilor
 
--  **cstdlib** : permite folosirea functiilor 'rand()' si 'srand()', in scopul plasarii aleatoare
+-  **cstdlib** : permite folosirea funcțiilor 'rand()' si 'srand()', in scopul plasării aleatoare
 
--  **ctime** : folosita pentru initializarea generatorului de nume aleatoare
+-  **ctime** : folosită pentru inițializarea generatorului de nume aleatoare
 
--  **using namespace std** : permite utilizarea directa a functiilor, fara a avea nevoie de prefixul 'std::'
-&nbsp;
-&nbsp;
+-  **using namespace std** : permite utilizarea directă a funcțiilor, fără a avea nevoie de prefixul 'std::'
 
-  
 
 **Variabile globale:**
 
--  **int tabla_sah[8]** : reprezinta tabloul de sah, fiecare index reprezinta o linie iar valoarea de pe acel index reprezinta coloana pe care este plasata turnul
+-  **int tabla_sah[8]** : reprezintă tabla de șah, fiecare index reprezintă o linie iar valoarea de pe acel index reprezintă coloana pe care este plasată turnul
 
--  **int solutii** : un contor care numara cate solutii corecte au fost gasite in total
-&nbsp;
-&nbsp;
+-  **int solutii** : un contor care numără câte soluții corecte au fost găsite în total
 
-**Functii:**
+
+**Funcții:**
 
  - void initializare_tabla():
  Această funcție inițializează tabla de șah prin setarea tuturor pozițiilor la valoarea '-1', indicând faptul că niciun turn nu este plasat pe tablă.
