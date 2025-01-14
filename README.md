@@ -60,13 +60,22 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
 
  - void initializare_tabla():
  Această funcție inițializează tabla de șah prin setarea tuturor pozițiilor la valoarea '-1', indicând faptul că niciun turn nu este plasat pe tablă.
+
+![MAP5](https://github.com/user-attachments/assets/1b2a0ae2-b951-447b-83ed-874069bf955a)
+
  
  - int verificare(int linie, int coloana):
   Această funcție verifică dacă un turn poate fi plasat pe poziția indicată de parametrul 'coloana' de pe rândul 'linie`.
+
+![MAP4](https://github.com/user-attachments/assets/e66f9748-5d57-43d4-8799-ed3d001f0a74)
+
   
  - void afisare_tabla():
  Această funcție afișează o reprezentarea vizuală a tablei de șah în consolă.
- 
+
+![MAP3](https://github.com/user-attachments/assets/bdaf47be-39f5-4651-9be9-96494180b5f2)
+
+
  - void plasare(int linie, int tip):
  Această funcție plasează turnurile pe tablă utilizând o abordare recursivă iar apoi generează toate soluțiile posibile. Funcția are posibilitate de afișare a soluțiilor pe care le generează, în cazul în care parametrul 'tip' are valoarea '0'.
 
