@@ -47,6 +47,8 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
 -  **ctime** : folosita pentru initializarea generatorului de nume aleatoare
 
 -  **using namespace std** : permite utilizarea directa a functiilor, fara a avea nevoie de prefixul 'std::'
+&nbsp;
+&nbsp;
 
   
 
@@ -55,6 +57,8 @@ Backtracking-ul se refera la cautarea tuturor solutiilor posibile, si selectarea
 -  **int tabla_sah[8]** : reprezinta tabloul de sah, fiecare index reprezinta o linie iar valoarea de pe acel index reprezinta coloana pe care este plasata turnul
 
 -  **int solutii** : un contor care numara cate solutii corecte au fost gasite in total
+&nbsp;
+&nbsp;
 
 **Functii:**
 
@@ -96,7 +100,9 @@ Această funcție afișează un meniu interactiv cu 3 optiuni(Afișarea tuturor 
 
 ![mapmn](https://github.com/user-attachments/assets/9a69f362-f9a1-445f-8120-f631d7cf7437)
 
-
+&nbsp;
+&nbsp;
+&nbsp;
 
 ### 3. Rezultate
 
